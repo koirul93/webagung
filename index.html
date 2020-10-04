@@ -27,10 +27,12 @@
 </head>
 
 <body>
-  <iframe src="musik.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-  <audio autoplay>
-    <source src="musik.mp3" type="audio/mp3">
-  </audio>
+  <audio id="audioID" loop>
+    <source src="musik.mp3" type="audio/mp3"></audio>
+
+  <script>
+    var myaudio = document.getElementById("audioID").autoplay = true;
+  </script>
   <header>
     <div class="container">
       <a class="logo" href="#"><img src="images/logo-white.png" alt="Logo" /></a>
